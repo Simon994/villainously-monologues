@@ -1,7 +1,5 @@
 
-![ga_cog_large_red_rgb](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png)
-
-# Villainously Monologues
+<img src="frontend/public/Villainously_logo.PNG" alt="logo" width="25"/><span style="font-size:28px;"> Villainously Monologues</span>
 
 A full-stack MERN app, with multiple relationships and CRUD functionality, allowing users to share, 
 
