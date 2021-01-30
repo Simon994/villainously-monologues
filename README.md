@@ -1,5 +1,4 @@
-
-<img src="frontend/public/Villainously_logo.PNG" alt="logo" width="25"/><span style="font-size:28px;"> Villainously Monologues</span>
+# Villainously Monologues <img src="frontend/public/Villainously_logo.PNG" alt="logo" width="25"/>
 
 A full-stack MERN app, with multiple relationships and CRUD functionality, allowing users to share, 
 
