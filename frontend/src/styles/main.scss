@@ -1,0 +1,347 @@
+
+// @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+$theColorPurple: #bd93f9;
+$navbarHeight: 75px;
+$deadpoolRed: #D44036;
+$deadpoolLightRed: #FF8357;
+$masterHeight: calc(100vh - 75px);
+
+*{
+  font-size: 20px;
+  margin: 0;
+  font-family: 'Bangers', cursive;
+}
+
+
+button{
+  border: 3px solid $deadpoolLightRed;
+  padding: 3px;
+}
+
+//Nav Section
+
+.nav{
+  min-height: $navbarHeight;
+  width: 100%;
+  background-color: $deadpoolRed;
+  color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .link{
+    padding: 0 50px 0;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    height: $navbarHeight;
+    
+    span{
+      display: inline-block;
+      padding-top: 20px;
+    }
+  }
+
+  .link:hover{
+    background-color: $deadpoolLightRed;
+  }
+
+}
+
+
+//Home section
+
+.hero-home{
+  color: white;
+  background-color: black;
+  width: 100vw;
+  height: calc(100vh - 75px);
+
+  h1{
+    font-size: 5rem;;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  h3{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  img{
+    height: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+  }
+}
+
+
+
+//General form styles
+
+form{
+
+ label,
+  p{
+    color: white;
+  }
+
+  input{
+    margin-bottom: 20px;
+  }
+
+  input, 
+  textarea{
+    padding: 0;
+    border: 0;
+    font-size: 1.2rem;  
+  }
+
+  button{
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+
+//Register section
+
+.register-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    button{
+      cursor: pointer;
+      margin-top: 15px;
+      width: 100%;
+    }
+}
+
+.register-container{
+ form input{
+    border: 0;
+  }
+}
+  
+.to-index, 
+.register-container{
+    width: 300px;
+    margin: 0 50px;
+    p{
+      color: $deadpoolRed;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+  }
+
+.to-index{
+  button{
+    margin-top: 0;
+  }
+}
+
+.register-container{
+  margin-bottom: 30px;
+  
+  display: flex;
+  flex-direction: column;
+
+  label{
+    font-size: 1.2rem;
+  }
+
+  input{
+    font-size: 1rem;
+    border: 2px solid grey;
+    width: 100%;
+  }
+
+}
+.error-highlight{
+  border: 1px solid $deadpoolRed;
+}
+
+p.error-explainer{
+  font-size: 0.7rem;
+  color: $deadpoolRed;
+  margin: 0;
+}
+
+
+
+//Gallery (INDEX) section
+
+.quote-card{
+  height: calc(100vh - 75px);
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card-text{
+  padding: 100px;
+}
+
+.img-container{
+  // width: 70%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.character-img{
+  width: 100%;
+  height: auto;
+}
+
+.legend.quote{
+  font-size: 5rem;
+}
+
+h5{
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.cards-container{
+  display: flex;
+
+}
+
+
+//SHOW details section
+
+.showdetail-container{
+  height: $masterHeight;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.show-img{
+  width: 50%;
+  height: 500px;
+
+  background-size: cover;
+}
+
+.show-text{
+  max-width: 400px;
+
+  h3{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: $deadpoolRed;
+  
+    span, p{
+      font-size: 1.5rem;
+      color: black;
+    }
+  }
+
+  .edit-delete{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  button{
+    margin: 20px 0 0;
+    width: 40%;
+    cursor: pointer;
+  }
+
+  .edit{
+    text-decoration: none;
+    color: black;
+    background-color: orange;
+  }
+
+  .delete{
+    background-color: red;
+  }
+
+}
+
+
+// Login section and quote form
+
+.login-container,
+.form-container{
+  height: $masterHeight;
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+
+  p{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+
+.quote-form,
+.login-container form{
+  width: 400px;
+
+  input, textarea{
+    width: 100%;
+  }
+
+  p{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+}
+
+//About section
+
+.about{
+  p{
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+}
+
+//Media rules
+
+@media only screen and (max-width: 800px){
+  .hero-home{
+    
+    h1{
+      font-size: 2rem;;
+      margin-top: 0;
+      text-align: center;
+      padding-top: 50px;
+    }
+  
+    h3{
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    img{
+      display: none;
+    }
+  }
+}
